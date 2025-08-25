@@ -1,167 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Super Colorida</title>
+    <title>Sobre Mim - Alisson</title>
     <style>
-        /* Estilos CSS para a página */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            /* Fundo gradiente com várias cores vibrantes */
-            background: linear-gradient(135deg, #ff007f, #ff8c00, #ffff00, #00ff00, #0000ff, #8a2be2);
-            background-size: 400% 400%;
-            animation: gradientAnimation 15s ease infinite;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
-
-        /* Animação para o fundo gradiente */
-        @keyframes gradientAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
         .container {
-            text-align: center;
-            padding: 40px;
-            background-color: rgba(0, 0, 0, 0.3);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            max-width: 80%;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-            /* Texto com gradiente */
-            background-image: linear-gradient(45deg, #ff69b4, #00ffff, #ff4500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        h1, h2 {
+            color: #5a5a5a;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
         }
-
-        p {
-            font-size: 1.2em;
-            margin-bottom: 2em;
-        }
-
-        .color-list {
-            list-style: none;
+        ul {
+            list-style-type: none;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 2em;
         }
-
-        .color-item {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .red { background-color: #ff0000; }
-        .orange { background-color: #ff8c00; }
-        .yellow { background-color: #ffff00; }
-        .green { background-color: #00ff00; }
-        .blue { background-color: #0000ff; }
-        .purple { background-color: #8a2be2; }
-
-        .button-group {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .colorful-button {
-            padding: 15px 30px;
-            font-size: 1.1em;
-            font-weight: bold;
-            text-transform: uppercase;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-            color: #fff;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-            background: #ff4500; /* Cor inicial */
-        }
-
-        /* Efeitos de hover e foco para os botões */
-        .colorful-button:hover, .colorful-button:focus {
-            transform: scale(1.1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-        }
-
-        .btn-1 {
-            background: linear-gradient(45deg, #ff69b4, #ff007f);
-        }
-
-        .btn-2 {
-            background: linear-gradient(45deg, #00ffff, #00bfff);
-        }
-
-        .btn-3 {
-            background: linear-gradient(45deg, #ffff00, #ff8c00);
-        }
-
-        /* Animação de pulsar para o botão principal */
-        .btn-3:hover {
-            animation: pulse 1s infinite;
-        }
-
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 20px rgba(255, 255, 0, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(255, 255, 0, 0);
-            }
+        li {
+            background: #eef;
+            margin-bottom: 0.5rem;
+            padding: 0.75rem;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>Bem-vindo à Página Colorida!</h1>
-        <p>Explore um mundo de cores vibrantes e design criativo.</p>
-
-        <ul class="color-list">
-            <li class="color-item red"></li>
-            <li class="color-item orange"></li>
-            <li class="color-item yellow"></li>
-            <li class="color-item green"></li>
-            <li class="color-item blue"></li>
-            <li class="color-item purple"></li>
+        <h1>Sobre Mim</h1>
+        
+        <h2>Olá! Meu nome é Alisson.</h2>
+        
+        <p>
+            Tenho <strong>17 anos</strong> e estou focado no meu desenvolvimento pessoal e profissional.
+        </p>
+        
+        <h2>Interesses e Hobbies</h2>
+        
+        <ul>
+            <li><strong>Estudos:</strong> Dedico tempo aos meus estudos para construir um futuro sólido.</li>
+            <li><strong>Programação:</strong> Faço um curso de programação, aprendendo e desenvolvendo novas habilidades.</li>
+            <li><strong>Games:</strong> Nos momentos de lazer, gosto de jogar diversos games.</li>
+            <li><strong>Futebol:</strong> Adoro jogar bola com os amigos, é uma ótima forma de me divertir e relaxar.</li>
+            <li><strong>Lutas:</strong> Tenho interesse e gosto de lutar.</li>
+            <li><strong>Relacionamento:</strong> Estou em um relacionamento.</li>
         </ul>
-
-        <div class="button-group">
-            <button class="colorful-button btn-1">Clique Aqui</button>
-            <button class="colorful-button btn-2">Conheça Mais</button>
-            <button class="colorful-button btn-3">Ação!
-            </button>
-        </div>
+        
+        <p>Obrigado por visitar meu site!</p>
     </div>
-
 </body>
 </html>
